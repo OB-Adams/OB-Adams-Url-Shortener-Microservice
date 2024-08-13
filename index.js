@@ -15,7 +15,10 @@ let urlCollection;
 
 async function connectToMongoDB() {
   try {
-    const client = new MongoClient(mongo_url);
+    const client = new MongoClient(mongo_url, {
+      serverSelectionTimeoutMS: 50000,
+      socketTimeoutMS: 50000,
+    });
     await client.connect();
     console.log("Connected to MongoDB");
     const db = client.db("urlshortener");
@@ -27,7 +30,7 @@ async function connectToMongoDB() {
         original_url: "https://github.com/OB-Adams",
         shorturl: "1",
       });
-      console.log('Default document added!')
+      console.log("Default document added!");
     }
   } catch (err) {
     console.error("Failed to connect to MongoDB", err);
