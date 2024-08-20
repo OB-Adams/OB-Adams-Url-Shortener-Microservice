@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+#root {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input::placeholder {
+    font-family: monospace;
+}
+
+button {
+    background-color: #48b1f8;
+    color: #fff;
+    padding: 0.55rem 1.25rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #48b2f8dc;
+}
+
+a {
+    color: #4eb3f7;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0 0;
+    font-size: 14px;
+    color: #555;
+    font-family: monospace;
+}
+
+/* Footer Styles */
+#footer {
+    margin-top: 0.5rem;
+}
+
+#footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: none;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+        min-height: 100vh;
+    }
+
+    #root {
+        padding: 1.5rem;
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 0.75rem;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-bottom: 0.75rem;
+    }
+
+    h3 {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    }
+
+    input[type="text"] {
+        padding: 0.65rem;
+        font-size: 13px;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 13px;
+    }
+
+    p, label {
+        font-size: 13px;
+    }
+
+    #footer {
+        margin-top: 0.5rem;
+    }
+}

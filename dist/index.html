@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>URL Shortener</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>URL Shortener Microservice</h1>
+      <h2>Short URL Creation</h2>
+      <p>
+        Example: Post [project-url]/api/shorturl -
+        <br />https://www.github.com/OB-Adams
+      </p>
+      <form action="/api/shorturl/" method="POST">
+        <h3>URL Shortener</h3>
+        <label for="url">URL:</label>
+        <input type="text" name="url" placeholder="https://github.com"/>
+        <button type="submit">POST URL</button>
+      </form>
+      <h1>Example Usage:</h1>
+      <a href="/api/shorturl/1">[project-url]/api/shorturl/1</a>
+      <h1>Will Redirect To:</h1>
+      <p>https://www.github.com/OB-Adams</p>
+    </div>
+    <div id="footer">by <a href="https://github.com/OB-Adams">OB</a></div>
+  </body>
+</html>
