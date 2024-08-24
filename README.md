@@ -19,7 +19,7 @@ This project provides a simple URL shortening service. Users can post a URL to g
    {
     "url": "https://example.com"
   }
-  - Response:
+- Response:
    {
     "original_url": "https://example.com",
     "shorturl": "abc123"
