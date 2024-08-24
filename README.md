@@ -43,11 +43,15 @@ This project provides a simple URL shortening service. Users can post a URL to g
 ## Installation and Setup
 
 1. Clone the Repository:
-     git clone https://github.com/OB-Adams/Url-Shortener-Microservice.git
-   cd Url-Shortener-Microservice
+```
+git clone https://github.com/OB-Adams/Url-Shortener-Microservice.git
+cd Url-Shortener-Microservice
+```
    
 2. Install Dependencies:
-     npm install
+```
+npm install
+```
    
 3. Set Up Environment Variables:
    Create a .env file in the root directory and add the following:
@@ -55,7 +59,9 @@ This project provides a simple URL shortening service. Users can post a URL to g
    MONGO_URL=<your-mongodb-connection-string>
    
 4. Run the Server:
-     npm start
+```
+npm start
+```
    
 ## Database
 
